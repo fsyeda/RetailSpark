@@ -1,0 +1,11 @@
+<div id="video">
+	<iframe id="player" width="740" height="370" frameborder="0" allowfullscreen></iframe>
+	<div id="carrot"></div>
+</div>
+<ul class="profiles small-block-grid-3 medium-block-grid-5">
+	<li ng-repeat="profile in why.profiles">
+		<img ng-src="{[{ profile.image }]}" ng-click="selectProfile($index)"/>
+		<h3>{[{ profile.name }]}</h3>
+		<p>{[{ profile.role }]}<br/>{[{ profile.brand }]}</p>
+	</li>
+</ul>
